@@ -1,2 +1,2 @@
 # custDataStream
-!(/imgs/producer.png)
+!(imgs/producer.png)
