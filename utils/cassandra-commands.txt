@@ -1,0 +1,10 @@
+//create keyspace
+
+CREATE KEYSPACE cust_data_stream
+WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+
+//create table
+
+CREATE TABLE cust_data (fname text, lname text, url text, product text, cnt counter, PRIMARY KEY (fname, lname, url, product));
+
+

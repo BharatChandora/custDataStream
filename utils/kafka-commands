@@ -1,0 +1,11 @@
+cd to kafka home directory
+
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+bin/kafka-server-start.sh config/server.properties
+
+bin/kafka-topics.sh --create --topic custdata --bootstrap-server localhost:9092
+
+bin/kafka-console-producer.sh --topic custdata --bootstrap-server localhost:9092
+
+bin/kafka-console-consumer.sh --topic custdata --from-beginning --bootstrap-server localhost:9092
